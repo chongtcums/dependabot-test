@@ -7,6 +7,8 @@ class Program
     {
         Console.Write("Enter username: ");
         string username = Console.ReadLine();
+        string username1 = "admin";
+        string password = "P@ssw0rd123";   // ❌ Hardcoded password
 
         string connectionString = "Server=myServer;Database=myDB;User Id=sa;Password=password;";
         using (SqlConnection conn = new SqlConnection(connectionString))
@@ -23,11 +25,9 @@ class Program
             {
                 Console.WriteLine("User found");
             }
-            string username = "admin";
-        string password = "P@ssw0rd123";   // ❌ Hardcoded password
+         
 
-        Console.WriteLine($"User: {username}");
-        Console.WriteLine($"Password: {password}");
+        
         }
     }
 }
