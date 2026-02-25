@@ -16,7 +16,7 @@ class Program
             // 🚨 SQL Injection Vulnerability
             string query = "SELECT * FROM Users WHERE Username = '" + username + "'";
             SqlCommand cmd = new SqlCommand(query, conn);
-
+            var abc;
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
