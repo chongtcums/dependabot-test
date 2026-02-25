@@ -9,7 +9,8 @@ class Program
         string username = Console.ReadLine();
         string username1 = "admin";
         string password = "P@ssw0rd123";   // ❌ Hardcoded password
-
+        Console.WriteLine($"User: {username1}");
+        Console.WriteLine($"Password: {password}");
         string connectionString = "Server=myServer;Database=myDB;User Id=sa;Password=password;";
         using (SqlConnection conn = new SqlConnection(connectionString))
         {
